@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+    <LinearLayout
+        android:id="@+id/linertop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/start_BTN"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="@string/start_BTN"
+                android:textColor="@color/color_start_BTN"
+                android:background="@drawable/btn_start"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/stop_BTN"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="@string/stop_BTN"
+                android:textColor="@color/color_stop_BTN"
+                android:background="@drawable/btn_stop"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/lap_BTN"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="@string/lap_BTN"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_lap"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/del_BTN"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="@string/del_BTN"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_del"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/linertop"
+        android:visibility="gone"
+        android:background="#B8B8B8"
+        />
+
+
+
+
+</RelativeLayout>
